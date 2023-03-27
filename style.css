@@ -1,0 +1,156 @@
+:root{
+    --color: #ffa229;
+    --bgcolor:#f0f0f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--bgcolor);
+    font-family: 'Righteous', cursive;
+
+
+}
+
+.left{
+    background-image: url(./Bg.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.content{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* right format */
+.right{
+    background-color: rgb(43, 43, 43);
+}
+
+.content, .logo{
+    display: flex;
+    
+}
+
+.logo{
+    height: auto;
+    position: relative;
+    top:20vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2bb3;
+    padding: 1em;
+    font-size: 2.3vh;
+}
+
+.logo100{
+    height: 80px;
+    padding-right: 1em;
+}
+
+.credit{
+    position: relative;
+    background-color: rgba(43, 43, 43, 0.7);
+    top: 79vh
+}
+
+
+/* left */
+
+
+.right{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+    gap:5vh;
+}
+
+.divider-1,.div2_inner,.divider-3{
+    padding-left: 3vw;
+}
+
+
+
+
+.highlight{
+    color: var(--color)
+}
+
+
+
+
+
+
+
+.divider-1{
+    font-size: 2em;
+    width: 50vw;
+}
+p{
+    padding-bottom: 1em;
+}
+
+/* .divider-2{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.div2_inner{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 1vw 1vw 2vw 3vw;
+    box-shadow: 2px 5px 10px -5px var(--color);
+}
+
+.form-header{
+    font-size: 2em;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+    text-transform: uppercase;
+    padding-right: 2vw;
+    width: 30%;
+    padding-bottom: 1vh;
+    gap: 1vh;
+    
+}
+
+input{
+    background-color: rgb(51, 51, 51);
+    border: 2px solid var(--bgcolor);
+    border-radius: 5px;
+    height: 2em;
+    padding-left: .5vw;
+
+}
+
+button[type="submit"]{
+    background-color: rgb(43, 43, 43);
+    padding: .5vw 2vw;
+    color: var(--color);
+    font-size: 1.5em;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    border: .2em solid var(--color);
+    border-radius: .5em;
+}
+
+
+/* input effects */
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
+}
